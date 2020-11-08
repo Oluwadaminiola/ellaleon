@@ -7,7 +7,9 @@
             Let's build the future together.
           </p>
           <p class="text-center">
-            <button class="btn btn-out-white con">Contact Us</button>
+            <router-link to="/contactus">
+              <button class="btn btn-out-white con">Contact Us</button>
+            </router-link>
           </p>
         </div>
         <div class="container-fluid">

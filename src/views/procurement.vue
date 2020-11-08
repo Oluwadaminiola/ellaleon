@@ -70,7 +70,7 @@
           </div>
         </div>
 
-        <div class="col-lg-6">
+        <div class="col-lg-6 order-lg-1 order-2">
           <div class="text" data-aos="fade-right" data-aos-once="true" data-aos-duration="2000">
             <p class="fs-18">
               Our highly ethical and fair standards as positioned us as material
@@ -87,7 +87,7 @@
           </div>
         </div>
 
-        <div class="col-lg-6">
+        <div class="col-lg-6 order-lg-2 order-1">
           <div class="picture" data-aos="fade-left" data-aos-once="true" data-aos-duration="2000">
             <div class="s3">
               <div class="inner"></div>

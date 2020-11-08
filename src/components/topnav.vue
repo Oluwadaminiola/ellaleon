@@ -18,7 +18,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item link" :class="{ active: $route.path == '/' }">
-              <a class="nav-link" href="/">Home</a>
+              <a class="nav-link" @click="home()">Home</a>
             </li>
             <li class="nav-item dropdown">
               <a
@@ -30,16 +30,15 @@
                 aria-haspopup="true"
                 aria-expanded="false"
                 :class="{
-                  active: $route.path == '/about' || $route.path == '/hse-policy',
-                }"
+                  active: $route.path == '/about' || $route.path == '/hse-policy' || $route.path == '/environmentalpolicy' || $route.path == '/communityaffairs'}"
               >
                 Who We Are
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="/about">About Us</a>
-                <a class="dropdown-item" href="/hse-policy">HSE Policy</a>
-                <a class="dropdown-item" href="/environmentalpolicy">Environmental Policy</a>
-                <a class="dropdown-item" href="/communityaffairs">Community Affairs</a>
+                <a class="dropdown-item" @click="about()">About Us</a>
+                <a class="dropdown-item" @click="hse()">HSE Policy</a>
+                <a class="dropdown-item" @click="env()">Environmental Policy</a>
+                <a class="dropdown-item" @click="com()">Community Affairs</a>
               </div>
             </li>
             <li class="nav-item dropdown">
@@ -62,14 +61,14 @@
                 Services
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="/procurement">Procurement</a>
-                <a class="dropdown-item" href="/construction"
+                <a class="dropdown-item" @click="pro()">Procurement</a>
+                <a class="dropdown-item" @click="real()"
                   >Real Estate & Building Construction</a
                 >
-                <a class="dropdown-item" href="/mechanicalengineering"
+                <a class="dropdown-item" @click="mech()"
                   >Mechanical Engineering</a
                 >
-                <a class="dropdown-item" href="/civilengineering"
+                <a class="dropdown-item" @click="civil()"
                   >Civil Engineering</a
                 >
               </div>
@@ -78,13 +77,13 @@
               class="nav-item link"
               :class="{ active: $route.path == '/projects' }"
             >
-              <a class="nav-link" href="/projects">Projects</a>
+              <a class="nav-link" @click="projects()">Projects</a>
             </li>
             <li
               class="nav-item link"
               :class="{ active: $route.path == '/contactus' }"
             >
-              <a class="nav-link" href="/contactus">Contact Us</a>
+              <a class="nav-link" @click="contact()">Contact Us</a>
             </li>
           </ul>
         </div>
@@ -218,6 +217,41 @@ export default {
       }
     });
   },
+  methods: {
+    home(){
+       this.$router.push({ path: "/" });
+    },
+    about(){
+       this.$router.push({ path: "/about" });
+    },
+    hse(){
+       this.$router.push({ path: "/hse-policy" });
+    },
+    env(){
+       this.$router.push({ path: "/environmentalpolicy" });
+    },
+    com(){
+       this.$router.push({ path: "/communityaffairs" });
+    },
+    pro(){
+       this.$router.push({ path: "/procurement" });
+    },
+    real(){
+       this.$router.push({ path: "/construction" });
+    },
+    mech(){
+       this.$router.push({ path: "/mechanicalengineering" });
+    },
+    civil(){
+       this.$router.push({ path: "/civilengineering" });
+    },
+    projects(){
+       this.$router.push({ path: "/projects" });
+    },
+    contact(){
+       this.$router.push({ path: "/contactus" });
+    }
+  }
 };
 </script>
 

@@ -17,10 +17,12 @@
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <div class="bg bg-1"> 
+            <div class="bg bg-1">
               <div class="container">
                 <div class="tagline">
-                  <p class="ff-p fs-50 fw-5 text-white">Capturing new opportunities for profitable growth</p>
+                  <p class="ff-p fs-50 fw-5 text-white">
+                    Capturing new opportunities for profitable growth
+                  </p>
                 </div>
               </div>
             </div>
@@ -29,7 +31,9 @@
             <div class="bg bg-2">
               <div class="container">
                 <div class="tagline">
-                  <p class="ff-p fs-50 fw-5 text-white">Committed to no incident/accident in every Operation </p>
+                  <p class="ff-p fs-50 fw-5 text-white">
+                    Committed to no incident/accident in every Operation
+                  </p>
                 </div>
               </div>
             </div>
@@ -38,7 +42,10 @@
             <div class="bg bg-3">
               <div class="container">
                 <div class="tagline">
-                  <p class="ff-p fs-50 fw-5 text-white">Guarantee skilled Engineers and workers capable of providing customized solutions</p>
+                  <p class="ff-p fs-50 fw-5 text-white">
+                    Guarantee skilled Engineers and workers capable of providing
+                    customized solutions
+                  </p>
                 </div>
               </div>
             </div>
@@ -98,7 +105,7 @@
           <div class="tab-content" id="myTabContent">
             <div class="tab-pane fade show active" id="civil" role="tabpanel">
               <div class="container py-5">
-                <div class="row"> 
+                <div class="row">
                   <div class="col-lg-7 py-5">
                     <p class="fs-24 fw-6 tx-u ff-q text-white">
                       Civil engineering service
@@ -167,7 +174,7 @@
                 <div class="row">
                   <div class="col-lg-7 py-5">
                     <p class="fs-24 fw-6 tx-u ff-q text-white">
-                      Procurememt Service
+                      Procurement Service
                     </p>
                     <p class="fs-16 text-white ff-q">
                       Ellaleon Ventures offers services such as Local and
@@ -201,24 +208,29 @@
     <section id="client">
       <div class="container pb-5 pt-3">
         <p class="fs-30 fw-6 tx-u mb-4">Our Clients</p>
-        <carousel :autoplay="true" :nav="false" :items="5" :dots="false" :responsive="{0:{items:2,nav:false}, 600:{items:3,nav:false}, 1200:{items: 5, dots: true}}">
+        <carousel
+          :autoplay="true"
+          :nav="false"
+          :items="5"
+          :dots="false"
+          :responsive="{
+            0: { items: 2, nav: true },
+            600: { items: 3, nav: true },
+            1200: { items: 5, dots: true },
+          }"
+        >
+          <img src="@/assets/img/ORIENTAL ENERGY LOGO.jpg" />
+          <img src="@/assets/img/FHN LOGO.png" />
+          <img src="@/assets/img/npdc.jpg" />
+          <img src="@/assets/img/TOTAL LOGO.png" />
+          <img src="@/assets/img/nnnn.jpg" />
           <img src="@/assets/img/chevron.png" />
-
+          <img src="@/assets/img/addax.png" />
           <img src="@/assets/img/mobil.jpg" />
 
-          <img src="@/assets/img/npdc.jpg" />
+          <!-- <img src="@/assets/img/abacus.jpg" /> -->
 
-          <img src="@/assets/img/pw.png" />
-
-          <img src="@/assets/img/addax.png" />
-
-          <img src="@/assets/img/benr.jpg" />
-
-          <img src="@/assets/img/abacus.jpg" />
-
-          <img src="@/assets/img/sinopec.svg" />
-
-          <img src="@/assets/img/twinpassion.png" />
+          <!-- <img src="@/assets/img/sinopec.svg" /> -->
         </carousel>
       </div>
     </section>

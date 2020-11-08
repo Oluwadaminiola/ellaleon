@@ -152,7 +152,7 @@
                   </div>
                   <div class="col-lg-10 m-auto pt-4">
                     <p class="text-right">
-                      <button class="btn btn-out-white px-5" type="submit">
+                      <button class="btn btn-out-blue px-5" type="submit">
                         Send
                       </button>
                     </p>
